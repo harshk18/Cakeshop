@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project CakeShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Vujahday Script', cursive;
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(255, 245, 233);
+        }
+
+        .header {
+            display: block;
+            width: 100%;
+            margin: 0px auto;
+            background-color: #93d7f7;
+            position: fixed;
+            top: 0px;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 32px;
+            top: 5px;
+            /* border: 4px solid red; */
+        }
+
+        .left img {
+            width: 123px;
+            height: 60px;
+            border: 0px;
+            border-radius: 5px;
+        }
+
+        .mid {
+            display: block;
+            width: 43%;
+            height: 70px;
+            margin: 0px auto;
+            /* border: 4px solid green; */
+        }
+
+
+        .navbar {
+            margin-top: 25px;
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: rgb(250, 225, 126);
+
+        }
+
+        .right {
+            position: absolute;
+            right: 18px;
+            top: 19px;
+            width: 350px;
+            display: inline-block;
+            /* border: 4px solid yellow; */
+        }
+
+        .search {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 216px;
+            height: 29px;
+            border: 2px solid black;
+        }
+
+        .search a img {
+            display: inline;
+            width: 46px;
+            height: 25px;
+        }
+
+        #searchbox {
+            position: absolute;
+            border: 0px;
+            height: 25px;
+        }
+
+        .log {
+            display: inline-block;
+            width: 100px;
+            height: 25px;
+            margin-left: 26px;
+            /* border: 2px solid black; */
+        }
+
+        .log a img {
+            display: inline;
+            width: 56px;
+            height: 32px;
+        }
+
+        .log span {
+            position: absolute;
+            top: 5px;
+            right: 7px;
+        }
+
+        .section1 img {
+            border-radius: 4px;
+            display: block;
+            width: 85%;
+            height: 665px;
+            margin: 75px 113.950px 0px 113.950px;
+        }
+
+        .section2 {
+            height: 448px;
+        }
+
+        .section2 img {
+
+            display: inline-block;
+            width: 313px;
+            height: 325px;
+            margin: 0px 31px;
+            border-radius: 155px
+        }
+
+        .section2 img:hover {
+            border: 2px solid rgb(240, 51, 38);
+        }
+
+        .section2 h1 {
+            display: inline-block;
+            font-family: 'Shadows Into Light', cursive;
+            color: rgb(245, 146, 146);
+            font-size: 54px;
+            margin: 0px 21px 2px 42px;
+        }
+
+        .article {
+            background-color: white;
+            height: 400px;
+        }
+
+        .article img {
+            width: 208px;
+            height: 215px;
+            margin: 27px 138px;
+            border-radius: 96px;
+        }
+
+
+        .write1 {
+            display: inline-block;
+            width: 200px;
+            font-family: 'Cormorant Garamond', serif;
+            text-align: center;
+            margin: 0px 150px 0px 150px;
+            font-size: 25px;
+        }
+
+
+        .write2 {
+            display: inline-block;
+            width: 200px;
+            font-family: 'Cormorant Garamond', serif;
+            text-align: center;
+            margin: 0px 150px 0px 150px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .footer {
+            width: 100%;
+            height: 325px;
+            background-color: rgb(240, 204, 210);
+        }
+
+        .write3 {
+            display: inline-block;
+            font-family: 'Cormorant Garamond', serif;
+            text-align: center;
+            margin: 45px 102px 10px 86px;
+
+        }
+
+        .write3 ul li {
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .write3 button {
+
+            background-color: rgb(252, 113, 136);
+            margin: 16px auto;
+            height: 32px;
+            font-family: 'Shadows Into Light';
+            font-size: 20px;
+
+        }
+
+        .last {
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+            top: 112px;
+            left: 1299px
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <a href="#"><img src="img/logo.jpg" alt="NOT FOUND"></a>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+
+            <div class="search">
+                <a href="#"><img src="img/search.jpg" alt="NOT FOUND\"></a>
+                <input type="search" name="mysearch" id="searchbox" placeholder="SEARCH...">
+            </div>
+
+            <div class="log">
+                <a href="#"><img src="img/user2.jpg" alt="NOT FOUND"></a>
+                <span style="text-align: center;">Log In</span>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="section1">
+        <img src="img/main.jpg" alt="NOT FOUND">
+    </section>
+
+    <div style="text-align: center;">
+        <h1 style="font-size: 50px;margin-top: 10px;margin-bottom: 10px;">Best Sellors</h1>
+    </div>
+
+    <section class="section2">
+        <img src="img/birthday.jpg" alt="NOT FOUND">
+        <img src="img/wedding.jpg" alt="NOT FOUND">
+        <img src="img/smallcake.jpg" alt="NOT FOUND">
+        <img src="img/donut.jpg" alt="NOT FOUND">
+        <h1>Birthday Cakes</h1>
+        <h1>Wedding Cakes</h1>
+        <h1>Delicious Delightes</h1>
+        <h1>Luscious Donuts</h1>
+    </section>
+
+    <article class="article">
+        <img src="img/PICK UP SERVICE.gif" alt="NOT FOUND">
+        <img src="img/truck.gif" alt="NOT FOUND">
+        <img src="img/giftwrap.gif" alt="NOT FOUND" style="margin-left: 180px;">
+        <span class="write1">NEW PICK UP SERVICE</span>
+        <span class="write1">FREE DELIVERY</span>
+        <span class="write1">SPECIAL GIFT WRAPS</span>
+        <span class="write2">Get it fresh</span>
+        <span class="write2">Delivered to your doorstep</span>
+        <span class="write2">Send a sweet suprise</span>
+    </article>
+
+    <footer class="footer">
+        <span class="write3">
+            SHOP:
+            <ul type="none">
+                <li>FAQ</li>
+                <li>Shipping/Pick Up</li>
+                <li>Store Policy</li>
+                <li>Contact Us</li>
+            </ul>
+        </span>
+        <span class="write3">
+            OPENING HOURS:
+            <ul type="none">
+                <li>Mon - Fri: 7am - 10pm</li>
+                <li>Saturday: 8am - 10pm</li>
+                <li>Sunday: 8am - 11pm</li>
+            </ul>
+        </span>
+        <span class="write3">
+            ADDRESS:
+            <ul type="none">
+                <li>500 Terry Francois Street</li>
+                <li>San Francisco, CA 94158</li>
+                <li>Tel: 123-456-7890</li>
+            </ul>
+        </span>
+        <span class="write3">
+            GET IT FRESH:
+
+            <ul type="none">
+                <input type="text" name="myemail" id="email" placeholder="Enter your email here"
+                    style="font-weight: bold;">
+                <button style="display: block;">SUBSCRIBE NOW</button>
+            </ul>
+        </span>
+
+        <div class="last">
+            &#169;2022 by Harsh Khandelwal.
+        </div>
+    </footer>
+</body>
+
+</html>
